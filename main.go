@@ -58,7 +58,7 @@ func isWebsocket() gin.HandlerFunc {
 }
 
 func init() {
-	fmt.Printf("####  BUILD @ 20201107 04:21:47  ####\n")
+	fmt.Printf("####  BUILD @ 20201107 06:21:16  ####\n")
 }
 
 func main() {
