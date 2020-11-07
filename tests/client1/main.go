@@ -15,7 +15,8 @@ func main() {
 	ctx := context.Background()
 	conn, _, err := dialer.DialContext(
 		ctx,
-		"ws://localhost:8000/s/test",
+		"ws://39.107.94.144:25010/s/test",
+		//"ws://localhost:8000/s/test",
 		http.Header{},
 	)
 	if err != nil {

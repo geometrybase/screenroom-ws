@@ -70,7 +70,7 @@ func main() {
 	r.Use(gin.Logger())
 	r.Use(gin.Recovery())
 	r.Any("/s/:topicID", isWebsocket(), wsHandler)
-	r.Any("/m/:topicID", isWebsocket(), wsHandler)
+	r.Any("/c/:topicID", isWebsocket(), wsHandler)
 	if err := http.ListenAndServe(
 		fmt.Sprintf(":%d", ginPort),
 		r,
