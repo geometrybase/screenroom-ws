@@ -66,10 +66,10 @@ wss://a.screenroom.cn/c/:deviceID  #手机URL
         topic: {
             id: "string"
                },
-        content: {
+        comment: {
             text: "string",
-            loc_x: "int",
-            loc_y: "int"
+            pos_x: "int",
+            pos_y: "int"
         }
     }
 }
