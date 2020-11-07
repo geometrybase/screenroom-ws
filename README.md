@@ -65,6 +65,11 @@ wss://a.screenroom.cn/c/:deviceID  #手机URL
         },
         topic: {
             id: "string"
+               },
+        content: {
+            text: "string",
+            loc_x: "int",
+            loc_y: "int"
         }
     }
 }
@@ -72,7 +77,7 @@ wss://a.screenroom.cn/c/:deviceID  #手机URL
 
 ```javascript 
 {
-    action: "favorite",
+    action: "collect",
     data: {
         user: {
         },
