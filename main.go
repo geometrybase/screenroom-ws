@@ -25,13 +25,13 @@ var (
 func wsHandler(c *gin.Context) {
 	w := c.Writer
 	r := c.Request
-	topicID := c.Param("topicID")
+	deviceID := c.Param("deviceID")
 	mu.Lock()
-	if _, ok := channels[topicID]; !ok {
-		channels[topicID] = newChannel()
-		go channels[topicID].run()
+	if _, ok := channels[deviceID]; !ok {
+		channels[deviceID] = newChannel()
+		go channels[deviceID].run()
 	}
-	serveWs(channels[topicID], w, r)
+	serveWs(channels[deviceID], w, r)
 	mu.Unlock()
 }
 
@@ -69,8 +69,8 @@ func main() {
 	r := gin.New()
 	r.Use(gin.Logger())
 	r.Use(gin.Recovery())
-	r.Any("/s/:topicID", isWebsocket(), wsHandler)
-	r.Any("/c/:topicID", isWebsocket(), wsHandler)
+	r.Any("/s/:deviceID", isWebsocket(), wsHandler)
+	r.Any("/c/:deviceID", isWebsocket(), wsHandler)
 	if err := http.ListenAndServe(
 		fmt.Sprintf(":%d", ginPort),
 		r,

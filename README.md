@@ -4,11 +4,11 @@ screenroom-ws -mode release -port 8000
 ```
 
 ```
-ws://localhost:8000/s/:topicID
-ws://localhost:8000/c/:topicID
+ws://localhost:8000/s/:deviceID
+ws://localhost:8000/c/:deviceID
 ```
 
-同一个topic ID的消息会相互广播
+同一个device ID的消息会相互广播
 
 
 # 数据格式
