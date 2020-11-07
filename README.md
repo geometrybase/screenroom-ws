@@ -1,4 +1,7 @@
 # 使用
+```
+screenroom-ws -mode release -port 8000
+```
 
 ```
 ws://localhost:8000/s/:topicID
