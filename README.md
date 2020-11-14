@@ -23,6 +23,7 @@ wss://a.screenroom.cn/c/:deviceID  #手机URL
     action: "select",
     data: {
         user: {
+            shopno: "string"
         },
         topic: {
             id: "string"
@@ -36,6 +37,7 @@ wss://a.screenroom.cn/c/:deviceID  #手机URL
     action: "like",
     data: {
         user: {
+          shopno: "string"
         },
         topic: {
             id: "string"
@@ -49,6 +51,7 @@ wss://a.screenroom.cn/c/:deviceID  #手机URL
     action: "unlike",
     data: {
         user: {
+            shopno: "string"
         },
         topic: {
             id: "string"
@@ -62,6 +65,7 @@ wss://a.screenroom.cn/c/:deviceID  #手机URL
     action: "comment",
     data: {
         user: {
+            shopno: "string"
         },
         topic: {
             id: "string"
@@ -80,6 +84,7 @@ wss://a.screenroom.cn/c/:deviceID  #手机URL
     action: "collect",
     data: {
         user: {
+            shopno: "string"
         },
         topic: {
             id: "string"
