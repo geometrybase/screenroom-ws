@@ -5,7 +5,7 @@ screenroom-ws -mode release -port 8000
 
 ```
 ws://localhost:8000/s/:deviceID
-ws://localhost:8000/c/:deviceID
+ws://localhost:8000/c/:deviceID/:shopNo
 ```
 
 ```bash
