@@ -9,8 +9,8 @@ ws://localhost:8000/c/:deviceID
 ```
 
 ```bash
-wss://a.screenroom.cn/s/:deviceID  #屏幕URL
-wss://a.screenroom.cn/c/:deviceID  #手机URL
+wss://play.screenroom.cn/s/:deviceID  #屏幕URL
+wss://play.screenroom.cn/c/:deviceID/:shopNo  #手机URL
 ```
 
 同一个device ID的消息会相互广播
